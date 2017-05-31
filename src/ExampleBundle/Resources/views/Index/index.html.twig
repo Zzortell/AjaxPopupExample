@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>AjaxPopup example</title>
+
+		{# <script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous"></script> #}
+		<script src="{{ asset('bundles/example/js/jquery-1.11.2.js') }}"></script>
+		<script src="{{ asset('bundles/zzajaxpopupjs/js/AjaxPopup.js') }}"></script>
+		<link href="{{ asset('bundles/zzajaxpopupjs/css/AjaxPopup.css') }}" rel="stylesheet"/>
+    </head>
+
+    <body>
+    	<h1>Example of a use of AjaxPopup</h1>
+    	<button class="ajax_popup_button" ajax-url="{{ path('simple') }}">Pop up</button>
+    	<button class="ajax_popup_button" ajax-url="{{ path('links') }}">A popup with links</button>
+    	<button class="ajax_popup_button" ajax-url="{{ path('buttons') }}">A popup with buttons</button>
+    	<button class="ajax_popup2_button" ajax-url="{{ path('form') }}">A popup with form</button>
+
+    	<p>
+    		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu nulla id nibh egestas pharetra. Suspendisse potenti. Duis in ligula ante. Sed facilisis ornare orci, a auctor justo condimentum a. Praesent porta placerat lectus, non faucibus orci semper ac. Nulla imperdiet venenatis odio, quis vehicula lacus fringilla sed. Integer elementum dapibus tellus, eu feugiat velit gravida sit amet. Proin ut quam imperdiet, elementum lacus sed, commodo nisl. Mauris scelerisque eget est id fringilla. Suspendisse at massa dignissim, maximus arcu a, luctus mauris. Aenean gravida, nunc non facilisis convallis, purus nisl vestibulum urna, eu semper metus sem vitae nisi. Suspendisse potenti. Morbi non quam nulla. Nunc sit amet dignissim diam.
+		<p>
+			Maecenas a tellus venenatis, efficitur ligula pretium, cursus ligula. Nam gravida sem vitae neque suscipit auctor. Donec a lacinia diam, sit amet aliquet quam. In hac habitasse platea dictumst. Mauris vitae nunc luctus, commodo sem at, auctor dolor. Aenean suscipit, sapien eget aliquam tempus, augue arcu fermentum nisl, eget maximus est lacus vitae massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed rutrum, enim vel congue dapibus, justo diam commodo arcu, elementum pulvinar eros arcu quis sapien. Morbi quis magna turpis. Nullam interdum vitae turpis in placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi pulvinar gravida mauris sed tincidunt. Sed vitae mauris diam. Sed porta augue tellus, eu venenatis sapien euismod vitae. Duis semper odio id erat tempor ornare.
+		</p>
+
+		<p>
+			Phasellus elementum at erat nec gravida. Quisque vitae ante tristique, ullamcorper dui sit amet, venenatis augue. Suspendisse pellentesque mattis dolor quis eleifend. Aliquam non eleifend felis. Proin sit amet neque a leo mollis luctus. Morbi luctus, purus non rutrum finibus, felis nulla rutrum diam, et malesuada lectus nisl ac nulla. Nullam eget mi vitae justo mattis viverra. Ut laoreet eros purus, maximus ultricies est scelerisque eu. Duis ac iaculis arcu. Vestibulum tortor ex, faucibus mollis velit eu, auctor fermentum mauris.
+		</p>
+
+		<p>
+			Suspendisse mollis maximus pulvinar. Curabitur ac elit vel nisi laoreet laoreet. Phasellus ac pharetra ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ornare nisl et dolor volutpat consequat. Nulla gravida leo at arcu tincidunt, quis lacinia elit fringilla. Nullam viverra justo sit amet nibh fringilla venenatis. Praesent accumsan justo laoreet eros hendrerit congue. Donec sit amet leo risus. Aliquam non augue at velit condimentum fringilla auctor vitae nibh. Ut porta egestas metus nec laoreet. Duis eget diam et nibh elementum dignissim a eu magna.
+		</p>
+
+		<p>
+			Integer tristique facilisis nulla eu ullamcorper. Morbi scelerisque metus eget nibh varius vulputate. Etiam lacinia justo vitae risus elementum hendrerit. Sed posuere dolor vel dolor tristique ultricies. Maecenas mollis rutrum rutrum. Nam hendrerit fringilla felis sed dapibus. Donec fringilla sapien nec dui congue consectetur. Nullam ipsum lacus, faucibus non dignissim eget, tristique ac ligula. Etiam maximus, nulla sit amet tincidunt fringilla, ex mauris ullamcorper quam, a consectetur justo mi cursus urna. Quisque sed sapien sit amet dui hendrerit faucibus. Nullam vitae posuere nunc. Praesent dictum neque ante.
+		</p>
+
+		<p>
+			Sed efficitur metus sit amet mi gravida, a sodales orci lacinia. Cras auctor lacinia quam sed pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate erat vitae nulla bibendum, vitae rutrum lacus sollicitudin. Fusce rutrum consequat augue, non venenatis dui tincidunt a. Quisque porttitor, risus non finibus aliquet, dui ex consectetur tortor, et scelerisque purus arcu ut magna. Mauris semper, ante non ultricies elementum, nisi ipsum scelerisque ligula, non rutrum arcu lorem quis odio. Integer cursus vel urna at consectetur. Suspendisse condimentum metus rutrum, scelerisque nunc quis, gravida arcu. Ut tempor lectus sed tellus porta, ac accumsan quam mollis. Maecenas malesuada nulla diam.
+		</p>
+
+		<p>
+			Phasellus commodo nibh ac tempor tincidunt. Maecenas auctor sed eros ut venenatis. Morbi tempor lobortis mollis. Cras placerat ultrices nibh, vitae aliquam nibh euismod vel. Ut tempor, mi eget aliquam euismod, massa arcu blandit sapien, at varius nibh metus id urna. Maecenas in felis ex. Curabitur risus ipsum, varius id maximus sit amet, convallis in arcu.
+		</p>
+
+		<p>
+			Vestibulum nec tincidunt mauris. Sed faucibus nec massa nec porttitor. In imperdiet aliquam turpis a volutpat. Praesent cursus eu felis et pharetra. Donec tincidunt nunc eget nulla aliquet egestas. Nam viverra, orci a tempus tempor, orci felis suscipit tortor, eu cursus nulla massa quis odio. Quisque vulputate in odio at faucibus.
+		</p>
+
+		<p>
+			Praesent ultrices sodales fermentum. Nullam eget metus elementum, facilisis odio ut, porttitor purus. Morbi urna felis, ultrices sit amet consequat a, dapibus et justo. Ut suscipit tellus et metus tempor elementum quis a augue. Nulla auctor nisl ut magna ultricies gravida et a orci. Nullam nec neque commodo ligula dapibus tincidunt. Curabitur pretium euismod mattis. Vivamus gravida commodo nunc, et dapibus mi blandit sagittis. Donec vestibulum leo vitae porta bibendum. Donec dictum laoreet accumsan. Quisque eget interdum mi. Nam eu iaculis sapien, quis pellentesque tellus. In tempor sagittis sapien, eu dapibus sapien maximus ac. Vestibulum faucibus varius arcu sodales ullamcorper.
+		</p>
+
+		<p>
+			Nam ornare ex id posuere pretium. Sed maximus consectetur felis sed pellentesque. Cras tempor leo ac velit sagittis gravida. Ut sed egestas nibh. Phasellus quis metus fermentum, lobortis nisi vitae, placerat velit. Sed pellentesque facilisis neque, nec interdum mi tincidunt a. Etiam eu gravida arcu, in pharetra neque. Morbi eu convallis ligula. Nullam tempus nisl nec lacus molestie, vel faucibus nisi tristique. Sed nec velit sed nulla dapibus aliquet. Nullam sodales tristique eros vel dapibus. Morbi nisi elit, viverra id eros in, sollicitudin tempor erat. Nam sed leo iaculis, suscipit sem sed, molestie tellus. Pellentesque in nisl rutrum purus accumsan ullamcorper.
+		</p>
+
+		<script type="text/javascript">
+		    $(document).ready(function() {
+		        popup1 = $.AjaxPopup({
+		            "overlay_color": "rgba(0,0,0,0.3)",
+		            "open_now": "{{ path('opening') }}",
+		            "buttons_selector": ".ajax_popup_button",
+		            "follow_links": true,
+		            "control_forms": true,
+		        });
+
+		        popup2 = $.AjaxPopup({
+		            "overlay_color": "rgba(255,165,0,0.3)",
+		            "open_now": false,
+		            "buttons_selector": ".ajax_popup2_button",
+		            "follow_links": false,
+		        });
+		    } );
+
+
+		</script>
+    </body>
+</html>
