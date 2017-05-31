@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "03b7e4ccbd0cb8dff039b507505746d6",
+    "content-hash": "15db4541b1e02e5b37b49adaa0cbf182",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -2035,6 +2035,47 @@
                 "templating"
             ],
             "time": "2017-04-20T17:39:48+00:00"
+        },
+        {
+            "name": "zzortell/zz-ajaxpopupjs-bundle",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Zzortell/AjaxPopup.js.git",
+                "reference": "871aaecf21e0f3e2084c42aa344aa17d0e661e19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Zzortell/AjaxPopup.js/zipball/871aaecf21e0f3e2084c42aa344aa17d0e661e19",
+                "reference": "871aaecf21e0f3e2084c42aa344aa17d0e661e19",
+                "shasum": ""
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Zz\\AjaxPopupJsBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rémi Blaise",
+                    "email": "remi.blaise@gmx.fr",
+                    "homepage": "http://php-zzortell.rhcloud.com/"
+                }
+            ],
+            "description": "AjaxPopup.js is a jQuery plugin which displays HTML requested by Ajax in a popup.",
+            "keywords": [
+                "ajax",
+                "ajax-form",
+                "ajax-popup",
+                "popup",
+                "symfony3-bundle"
+            ],
+            "time": "2017-05-31T15:29:06+00:00"
         }
     ],
     "packages-dev": [
@@ -2163,8 +2204,5 @@
     "platform": {
         "php": ">=5.5.9"
     },
-    "platform-dev": [],
-    "platform-overrides": {
-        "php": "5.5.9"
-    }
+    "platform-dev": []
 }
