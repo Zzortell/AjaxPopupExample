@@ -11,7 +11,7 @@ Can be used with Symfony or standalone.
 
 ### Standalone installation
 
-Download this folder: [src/Zz/AjaxPopupJsBundle/Resources/public/](//TODO).
+Download this folder: [src/Zz/AjaxPopupJsBundle/Resources/public/](https://github.com/Zzortell/AjaxPopup.js/tree/master/src/Zz/AjaxPopupJsBundle/Resources/public).
 
 Include jQuery in your project:
 ```html
@@ -58,7 +58,7 @@ class AppKernel extends Kernel
 
 Don't forget to install assets:
 ```bash
-<big></big>n/console assets:install
+bin/console assets:install
 # or
 bin/console assets:install web --symlink --relative
 ```
@@ -97,16 +97,15 @@ Step 1: Make AjaxPopup.js handle the request of a popup.
             "loader": null, // e.g. $("#loader"),
 
             "open_now": null, // put an url to open on document ready
-            "buttons_selector": null, // e.g. ".ajax_popup_button",
+            "buttons_selector": "button[ajax-url]",
 
             "follow_links": true,
             "control_forms": true,
+            "control_buttons": true,
         });
     } );
 </script>
 ```
-
-TODO: control_buttons, default buttonSelector "button[ajax-url]"
 
 Step 2: Enjoy!
 
@@ -131,6 +130,7 @@ Click on the overlay or press `Echap` to close the popup.
 ### Behavior options
 - follow_links: If set true, AjaxPopup will reload the content of the popup when the user click on a link inside the popup, with the given url. Will not follow the link if the specified `target` is not `_self`.
 - control_forms: If set true, AjaxPopup will handle form submission inside the popup and reload the content of the popup with server's response.
+- control_buttons: If set true, AjaxPopup will handle buttons inside the popup like ones outside.
 
 ### API
 The object returned by $().AjaxPopup() has several methods:

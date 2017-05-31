@@ -12,10 +12,11 @@
 				"loader": null, // e.g. $("#loader"),
 
 				"open_now": false,
-				"buttons_selector": null, // e.g. ".ajax_popup_button",
+				"buttons_selector": "button[ajax-url]", // e.g. ".ajax_popup_button",
 
 				"follow_links": true,
 				"control_forms": true,
+				"control_buttons": true,
 			};
 
 			function setOptions(parameters){
@@ -127,7 +128,9 @@
 					'success': function(data, textStatus, jqXHR) {
 						if (jqXHR.status == 200) {
 							changeContent(data);
-							dispatchControlButtons(popup);
+							if (options.control_buttons) {
+								dispatchControlButtons(popup);
+							}
 							if (options.follow_links) {
 								controlLinks(popup);
 							}
